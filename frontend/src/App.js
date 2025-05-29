@@ -266,7 +266,7 @@ function App() {
               </motion.button>
               
               <motion.button
-                className="btn-outline text-lg px-12 py-4"
+                className="btn-secondary text-lg px-12 py-4"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
