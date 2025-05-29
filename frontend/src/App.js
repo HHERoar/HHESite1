@@ -340,9 +340,9 @@ function App() {
               <motion.div
                 key={index}
                 variants={fadeInUp}
-                className="glass-card p-6 text-center hover:shadow-xl transition-all duration-300"
+                className="glass-card p-6 text-center hover:shadow-xl transition-all duration-300 border-l-4 border-empire-turquoise-500"
               >
-                <value.icon className="text-empire-gold-500 mx-auto mb-4" size={48} />
+                <value.icon className="text-empire-turquoise-500 mx-auto mb-4" size={48} />
                 <h4 className="text-lg font-semibold text-empire-black-900 mb-2">
                   {value.title}
                 </h4>
