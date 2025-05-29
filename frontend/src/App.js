@@ -549,7 +549,7 @@ function App() {
                   <label className="block text-sm font-medium text-empire-black-700 mb-2">
                     I'm interested in:
                   </label>
-                  <select className="w-full px-4 py-3 border border-empire-black-200 rounded-xl focus:ring-2 focus:ring-empire-gold-500 focus:border-transparent">
+                  <select className="w-full px-4 py-3 border border-empire-turquoise-200 rounded-xl focus:ring-2 focus:ring-empire-turquoise-500 focus:border-transparent">
                     <option>Partnership Opportunities</option>
                     <option>Investment Information</option>
                     <option>Volunteer Programs</option>
