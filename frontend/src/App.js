@@ -511,15 +511,15 @@ function App() {
                 
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
-                    <Phone className="text-empire-gold-500" size={20} />
+                    <Phone className="text-empire-turquoise-500" size={20} />
                     <span className="text-empire-black-700">+1 (555) 123-4567</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <Mail className="text-empire-gold-500" size={20} />
+                    <Mail className="text-empire-turquoise-500" size={20} />
                     <span className="text-empire-black-700">connect@havenheights.org</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <MapPin className="text-empire-gold-500" size={20} />
+                    <MapPin className="text-empire-turquoise-500" size={20} />
                     <span className="text-empire-black-700">123 Kingdom Way, Hope City</span>
                   </div>
                 </div>
