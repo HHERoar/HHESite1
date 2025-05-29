@@ -281,7 +281,7 @@ function App() {
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 2, repeat: Infinity }}
         >
-          <ChevronDown className="text-empire-gold-400" size={32} />
+          <ChevronDown className="text-empire-turquoise-400" size={32} />
         </motion.div>
       </section>
 
