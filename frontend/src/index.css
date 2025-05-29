@@ -1,17 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
-        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
-        "Helvetica Neue", sans-serif;
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.2;
+  }
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-        monospace;
+@layer components {
+  .glass-card {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl;
+  }
+  
+  .glass-card-dark {
+    @apply bg-empire-black-900/20 backdrop-blur-md border border-empire-black-700/30 rounded-2xl;
+  }
+  
+  .btn-primary {
+    @apply bg-empire-gold-500 hover:bg-empire-gold-600 text-empire-black-900 font-semibold px-8 py-3 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+  }
+  
+  .btn-secondary {
+    @apply bg-empire-turquoise-500 hover:bg-empire-turquoise-600 text-white font-semibold px-8 py-3 rounded-xl transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-empire-gold-500 text-empire-gold-500 hover:bg-empire-gold-500 hover:text-empire-black-900 font-semibold px-8 py-3 rounded-xl transition-all duration-300;
+  }
+  
+  .gradient-gold {
+    background: linear-gradient(135deg, #ffc107 0%, #e6a800 100%);
+  }
+  
+  .gradient-turquoise {
+    background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+  }
+  
+  .gradient-warm {
+    background: linear-gradient(135deg, #faf1e0 0%, #eed5a1 100%);
+  }
+  
+  .text-gradient-gold {
+    background: linear-gradient(135deg, #ffc107 0%, #e6a800 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .hero-pattern {
+    background-image: 
+      radial-gradient(circle at 25px 25px, rgba(255, 193, 7, 0.1) 2px, transparent 0),
+      radial-gradient(circle at 75px 75px, rgba(20, 184, 166, 0.1) 2px, transparent 0);
+    background-size: 100px 100px;
+  }
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .transform-preserve-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
 }
